@@ -15,11 +15,8 @@ Pod::Spec.new do |s|
     An extended description of zy_lib_idemia_face_ios project.
     DESC
     s.homepage     = "http://www.zytrust.com"
-    s.license = { :type => 'Copyright', :text => <<-LICENSE
-                   Copyright 2022
-                   Permission is granted to...
-                  LICENSE
-                }
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+
     s.author = { "$(git config user.name)" => "$(git config user.email)" }
     s.source = { :git => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git", :tag => "2.0.1" }
     s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
