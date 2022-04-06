@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "zy_lib_idemia_face_ios"
-    s.version      = "2.0.3"
+    s.version      = "2.0.4"
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -26,10 +26,10 @@ Pod::Spec.new do |s|
     #s.swift_version = "4.2"
     s.ios.deployment_target  = '11.0'
 
-    s.dependency 'lottie-ios', '~> 3.3.0'
-    s.dependency 'BiometricSDK', '~> 4.23.0'
-    s.dependency 'BiometricSDKAlgorithmPlugin_F5_0_VID81', '~> 4.23.0'
-    s.dependency 'BiometricSDKFaceCapturePluginNormal', '~> 4.23.0'
-    s.dependency 'BiometricSDKUIExtensions', '~> 1.5.3'
+    s.dependency = 'lottie-ios', '~> 3.3.0'
+    s.dependency = 'BiometricSDK', :git => 'https://github.com/ZYTRUST/BiometricSDK.git', :tag => '4.23.0'
+    s.dependency = 'BiometricSDKAlgorithmPlugin_F5_0_VID81', :git => 'https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F5_0_VID81.git', :tag => '4.23.0'
+    s.dependency = 'BiometricSDKFaceCapturePluginNormal', :git => 'https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git', :tag => '4.23.0'
+    s.dependency = 'BiometricSDKUIExtensions', :git => 'https://github.com/ZYTRUST/BiometricSDKUIExtensions.git', :tag => '1.5.3'
 end
 
