@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '3.1.3'
+  s.version          = '3.1.4'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -30,8 +30,6 @@ Pod::Spec.new do |s|
     s.dependency 'BiometricSDK', '~> 4.23.0'
     s.dependency 'BiometricSDKAlgorithmPlugin_F5_0_VID81', '~> 4.23.0'
     s.dependency 'BiometricSDKFaceCapturePluginNormal', '~> 4.23.0'
-
-    s.static_framework = true
 
   
 end
