@@ -14,17 +14,20 @@ Pod::Spec.new do |s|
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
     DESC
-    s.homepage     = "http://www.zytrust.com"
+    s.homepage         = 'https://github.com/ZYTRUST/zy_lib_idemia_face_ios'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
-    s.author = { "$(git config user.name)" => "$(git config user.email)" }
+    s.author           = { 'ZYTRUST SA' => 'ztmobile@zytrust.com' }
     s.source = { :git => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git", :tag => "3.0.1" }
     #s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     #s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     #s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
-    s.platform = :ios
-    #s.swift_version = "4.2"
-    s.ios.deployment_target  = '11.0'
+    s.ios.deployment_target = '12.0'
+  
+    s.dependency 'lottie-ios', '~> 3.3.0'
+
+  
+    s.swift_version = '5.0'
 
 
 end
