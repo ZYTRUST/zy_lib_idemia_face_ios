@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '3.1.6'
+  s.version          = '3.1.7'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
     s.author = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source = { :git => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git", :tag => "3.1.6" }
+    s.source = { :git => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git", :tag => "3.1.7" }
     s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
