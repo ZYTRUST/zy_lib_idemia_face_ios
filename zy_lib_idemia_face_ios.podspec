@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     s.source = { :http => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios/archive/refs/tags/3.0.2.tar.gz" }
     #s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     #s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
-    #s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
+    s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
     s.ios.deployment_target = '12.0'
   
     s.dependency 'lottie-ios', '~> 3.3.0'
