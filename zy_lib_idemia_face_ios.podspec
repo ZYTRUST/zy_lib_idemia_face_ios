@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "zy_lib_idemia_face_ios"
-    s.version      = "3.0.4"
+    s.version      = "3.0.6"
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
     s.author           = { 'ZYTRUST SA' => 'ztmobile@zytrust.com' }
-    s.source = { :http => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios/archive/refs/tags/3.0.4.tar.gz" }
+    s.source = { :http => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios/archive/refs/tags/3.0.6.tar.gz" }
     #s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     #s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
-    #s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
+    s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
     s.ios.deployment_target = '12.0'
   
     s.dependency 'lottie-ios', '~> 3.3.0'
