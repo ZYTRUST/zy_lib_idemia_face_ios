@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '4.0.0'
+  s.version          = '4.0.1'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -17,10 +17,11 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
     s.author = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source = { :git => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git", :tag => s.version.to_s}
+    #s.source = { :git => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git", :tag => s.version.to_s}
+    s.source           = { :http => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios/releases/download/4.0.0/zy_lib_idemia_face_ios.tar.gz" }
     s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
-    s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
+    s.ios.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
     s.platform = :ios
     #s.swift_version = "4.2"
     s.ios.deployment_target  = '11.0'
@@ -31,5 +32,7 @@ Pod::Spec.new do |s|
     #s.dependency 'BiometricSDKAlgorithmPlugin_F5_0_VID81', '~> 4.23.0'
     #s.dependency 'BiometricSDKFaceCapturePluginNormal', '~> 4.23.0'
 
-  
+   s.pod_target_xcconfig = {
+    'ONLY_ACTIVE_ARCH' => 'YES'
+}
 end
