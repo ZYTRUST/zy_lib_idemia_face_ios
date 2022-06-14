@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '4.0.2'
+  s.version          = '4.0.4'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
     #s.dependency 'BiometricSDKFaceCapturePluginNormal', '~> 4.23.0'
 
    s.pod_target_xcconfig = {
-    'ONLY_ACTIVE_ARCH' => 'YES'
+    'ONLY_ACTIVE_ARCH' => 'NO'
 }
 end
