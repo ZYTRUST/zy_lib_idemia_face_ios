@@ -10,11 +10,7 @@
 #endif
 #endif
 
-#import "ZyTErrorViewController.h"
 #import "ZyTEnrollView.h"
-#import "ZyTJoinPointsView.h"
-#import "ZyTPassiveLivenessView.h"
-#import "ZyTBasicLivenessView.h"
 #import "ZyTActivation.h"
 #import "ZyTUtil.h"
 #import "ZyTBiomatchOptions.h"

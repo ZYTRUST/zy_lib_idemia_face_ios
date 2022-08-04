@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '6.0.2'
+  s.version          = '6.0.3'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
     s.platform = :ios
     #s.swift_version = "4.2"
-    s.ios.deployment_target  = '11.0'
+    s.ios.deployment_target  = '12.0'
 
     #s.dependency 'lottie-ios', '~> 3.3.0'
     #s.dependency 'BiometricSDKUIExtensions', '~> 1.5.3'

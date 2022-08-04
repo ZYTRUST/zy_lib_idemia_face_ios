@@ -1,2 +1,0 @@
-# zy_lib_idemia_face_ios
-zy_lib_idemia_face_ios
