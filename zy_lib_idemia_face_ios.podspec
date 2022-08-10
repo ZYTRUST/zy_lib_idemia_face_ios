@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '6.0.5'
+  s.version          = '6.0.6'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -26,8 +26,5 @@ Pod::Spec.new do |s|
     #s.swift_version = "4.2"
     s.ios.deployment_target  = '12.0'
 
-   s.pod_target_xcconfig = {
-    'ONLY_ACTIVE_ARCH' => 'NO'
-   }
 
 end
