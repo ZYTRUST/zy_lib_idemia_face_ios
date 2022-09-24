@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '6.0.8.12'
+  s.version          = '6.0.8.13'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     #s.resource_bundles = {
     # 'zy_lib_idemia_face_ios' => ['zy_lib_idemia_face_ios.framework/Assets/**/*.{plist}']
     #}
-    #s.resources = 'zy_lib_idemia_face_ios.framework/**/*.{lproj,storyboard,xcassets,png}'
+    s.resources = 'Assets/*.{lproj,storyboard,xcassets,png}'
 
     s.ios.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
     s.platform = :ios
