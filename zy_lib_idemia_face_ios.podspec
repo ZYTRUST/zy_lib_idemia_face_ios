@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     #s.resources = 'zy-lib-idemia-face-ios/Assets/**/*.{lproj,storyboard,xcassets,png}'
-    s.resources = 'zy_lib_idemia_face_ios.framework/**/*.{lproj,storyboard,xcassets,png,Assets.car}'
+    s.resources = 'zy_lib_idemia_face_ios.framework/**/*.{lproj,storyboard,xcassets,png,car}'
 
     s.ios.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
     s.platform = :ios
