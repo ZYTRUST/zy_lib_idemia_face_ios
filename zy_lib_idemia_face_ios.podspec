@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '6.0.8.19'
+  s.version          = '6.0.9'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -21,16 +21,11 @@ Pod::Spec.new do |s|
     #s.source           = { :http => "https://github.com/ZYTRUST/zy_lib_idemia_face_ios/releases/download/4.0.0/zy_lib_idemia_face_ios.tar.gz" }
     s.public_header_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
-    #s.resource_bundles = {
-    # 'zy_lib_idemia_face_ios' => ['zy_lib_idemia_face_ios.framework/Assets/**/*.{plist}']
-    #}
-    #s.resources = 'zy_lib_idemia_face_ios.framework/*.{lproj,storyboard,xcassets}'
-
-    s.resource_bundles = { "zy_lib_idemia_face_ios" => ['zy_lib_idemia_face_ios/*.xcassets', 'zy_lib_idemia_face_ios/*.storyboard'] }
-
     s.ios.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
     s.platform = :ios
     #s.swift_version = "4.2"
+    s.static_framework = true
+
     s.ios.deployment_target  = '12.0'
 
 
