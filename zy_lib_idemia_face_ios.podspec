@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '6.1.1.2'
+  s.version          = '6.1.1.3'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
     s.resources = 'zy_lib_idemia_face_ios/Assets/*.{lproj,storyboard,xcassets,png}'
 
-    
+
     #s.swift_version = "4.2"
     s.static_framework = true
 
