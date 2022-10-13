@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zy_lib_idemia_face_ios'
-  s.version          = '6.1.1.9'
+  s.version          = '6.1.2'
     s.summary      = "A brief description of zy_lib_idemia_face_ios project."
     s.description  = <<-DESC
     An extended description of zy_lib_idemia_face_ios project.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     s.source_files = "zy_lib_idemia_face_ios.framework/Headers/*.h"
     s.platform = :ios
 
-    s.resources = 'zy_lib_idemia_face_ios.bundle'
+    #s.resources = 'zy_lib_idemia_face_ios.bundle'
 
 
     #s.swift_version = "4.2"
