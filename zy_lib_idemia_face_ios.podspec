@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.3.0'
+    s.version          = '6.3.1'
     s.summary          = 'A short description of zy-lib-idemia-face-ios.'
     
     # This description is used to generate tags and improve search results.
