@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.3.8'
-    s.summary          = 'A short description of zy-lib-idemia-face-ios.'
+    s.version          = '6.4.0'
+    s.summary          = 'libreria que pertenece a Zytrust SA zy-lib-idemia-face-ios.'
     
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '12.0'
     
-    s.vendored_frameworks = "zy_lib_idemia_face_ios.framework"
+    s.vendored_frameworks = "zy_lib_idemia_face_ios.xcframework"
 
     s.source_files = 'zy_lib_idemia_face_ios/Classes/**/*'
     
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
     #s.dependency 'BiometricSDKFaceCapturePluginNormal', '4.34.1'
     #s.dependency 'BiometricSDKUIFaceModePassiveCore', '2.3.1'
     s.dependency 'ZyIdemiaUIFacial', '0.1.7'
-    s.dependency 'lottie-ios', '3.3.0'
+    s.dependency 'lottie-ios'
     
     
 end
