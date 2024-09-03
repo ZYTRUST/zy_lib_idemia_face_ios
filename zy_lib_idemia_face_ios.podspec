@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.4.2'
+    s.version          = '6.4.3'
     s.summary          = 'libreria que pertenece a Zytrust SA zy-lib-idemia-face-ios.'
     
     # This description is used to generate tags and improve search results.
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
     #s.dependency 'BiometricSDKAlgorithmPlugin_F6_0_IDD80', '4.34.1'
     #s.dependency 'BiometricSDKFaceCapturePluginNormal', '4.34.1'
     #s.dependency 'BiometricSDKUIFaceModePassiveCore', '2.3.1'
-    s.dependency 'ZyIdemiaUIFacial', '0.1.7'
+    #s.dependency 'ZyIdemiaUIFacial', '0.1.7'
     s.dependency 'lottie-ios'
     
     
