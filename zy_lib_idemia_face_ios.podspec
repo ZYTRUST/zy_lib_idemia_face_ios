@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.4.3'
+    s.version          = '6.4.4'
     s.summary          = 'libreria que pertenece a Zytrust SA zy-lib-idemia-face-ios.'
     
     # This description is used to generate tags and improve search results.
@@ -21,41 +21,25 @@ Pod::Spec.new do |s|
     TODO: Add long description of the pod here.
     DESC
     
-    s.homepage         = 'https://github.com/Ivan Caceres/zy-lib-idemia-face-ios'
-    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.homepage         = 'https://www.zytrust.com'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Ivan Caceres' => 'icaceres@zytrust.com' }
-    s.source           = { :git => 'https://github.com/Ivan Caceres/zy-lib-idemia-face-ios.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     
     s.ios.deployment_target = '12.0'
     
     s.vendored_frameworks = "zy_lib_idemia_face_ios.xcframework"
 
-    s.source_files = 'zy_lib_idemia_face_ios/Classes/**/*'
     
-    
-    # YES -> SOLO TOMA ARM64
-    # NO  -> TOMA ARM64 Y ARMV7
     s.pod_target_xcconfig = {
         'ONLY_ACTIVE_ARCH' => 'YES'
     }
-    
-    #s.resource_bundles = {
-    #    'zy_lib_idemia_face_ios' => ['zy_lib_idemia_face_ios/Assets/*.{lproj,storyboard,xcassets,png}']
-    #}
-    
-    #s.resources = 'zy_lib_idemia_face_ios/Assets/*.{lproj,storyboard,xcassets,png}'
-    
-    #s.public_header_files = 'zy_lib_idemia_face_ios/Classes/**/*.h'
     s.static_framework = true
-    # s.frameworks = 'UIKit', 'MapKit'
+
+    s.resources = ['zy_lib_idemia_face_ios.bundle']
+
     
-    #s.dependency 'BiometricSDK', '4.34.1'
-    #s.dependency 'BiometricSDKAlgorithmPlugin_F6_0_IDD80', '4.34.1'
-    #s.dependency 'BiometricSDKFaceCapturePluginNormal', '4.34.1'
-    #s.dependency 'BiometricSDKUIFaceModePassiveCore', '2.3.1'
-    #s.dependency 'ZyIdemiaUIFacial', '0.1.7'
     s.dependency 'lottie-ios'
     
     
