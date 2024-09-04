@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "zy_lib_idemia_face_ios",
-            targets: ["zy_lib_idemia_face_ios"]
+            targets: ["zy_lib_idemia_face_ios_target"]  // Usa el target que tiene las dependencias
         )
     ],
     dependencies: [
@@ -24,6 +24,15 @@ let package = Package(
         .binaryTarget(
             name: "zy_lib_idemia_face_ios",
             path: "zy_lib_idemia_face_ios.xcframework"
+        ),
+        .target(
+            name: "zy_lib_idemia_face_ios_target",
+            dependencies: [
+                .product(name: "BiometricSDKAlgorithmPlugin_F6_0_IDD80", package: "BiometricSDKAlgorithmPlugin_F6_0_IDD80"),
+                .product(name: "BiometricSDKFaceCapturePluginNormal", package: "BiometricSDKFaceCapturePluginNormal"),
+                .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore"),
+                .product(name: "Lottie", package: "lottie-ios")
+            ]
         )
     ]
 )
