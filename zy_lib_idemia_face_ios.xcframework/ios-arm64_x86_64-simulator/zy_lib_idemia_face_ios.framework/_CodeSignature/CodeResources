@@ -38,21 +38,12 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+zQ3n0BKx8z5/LrgOO+6eqmVJMI=
+		VhfAVxYNUDvz1mc1mz9u2p7+cco=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		NQSIg5yF9V2039S07ftsDNPCsyo=
 		</data>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ks2iScWg4WT48Hb4kuyA3qRfaME=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -154,19 +145,6 @@
 			<data>
 			/15U9UPVnfGfZikbuo2y8Cb9ZHCKTGVhytWAiutLmgw=
 			</data>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ks2iScWg4WT48Hb4kuyA3qRfaME=
-			</data>
-			<key>hash2</key>
-			<data>
-			XYy+9cnhUr5niA6kHOwOYOaw4AWWaPPbO/B+ADbBiqw=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
