@@ -10,29 +10,20 @@ let package = Package(
     products: [
         .library(
             name: "zy_lib_idemia_face_ios",
-            targets: ["zy_lib_idemia_face_ios_target"]  // Usa el target que tiene las dependencias
+            targets: ["zy_lib_idemia_face_ios_bin"]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", from: "4.34.10"),
-        .package(url: "https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F6_0_IDD80.git", from: "4.34.4"),
-        .package(url: "https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git", from: "4.34.4"),
-        .package(url: "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", from: "2.3.5"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", from: "4.34.12"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F6_0_IDD80.git", from: "4.34.6"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git", from: "4.34.6"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", from: "2.3.7"),
         .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.4.1")
     ],
     targets: [
         .binaryTarget(
-            name: "zy_lib_idemia_face_ios",
-            path: "zy_lib_idemia_face_ios.xcframework"
-        ),
-        .target(
-            name: "zy_lib_idemia_face_ios_target",
-            dependencies: [
-                .product(name: "BiometricSDKAlgorithmPlugin_F6_0_IDD80", package: "BiometricSDKAlgorithmPlugin_F6_0_IDD80"),
-                .product(name: "BiometricSDKFaceCapturePluginNormal", package: "BiometricSDKFaceCapturePluginNormal"),
-                .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore"),
-                .product(name: "Lottie", package: "lottie-ios")
-            ]
+            name: "zy_lib_idemia_face_ios_bin",
+            path: "Sources/zy_lib_idemia_face_ios.xcframework" // Ruta al archivo binario
         )
     ]
 )

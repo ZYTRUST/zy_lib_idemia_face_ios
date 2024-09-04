@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ZYTRUST/BiometricSDK.git",
       "state" : {
-        "revision" : "74abc8dd3b686cda3a1178e9184ab3838288535f",
-        "version" : "4.34.10"
+        "revision" : "f1afe8e5fa9974faaa4b1098c255c315b98160f5",
+        "version" : "4.34.12"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F6_0_IDD80.git",
       "state" : {
-        "revision" : "3d949e15733c2cb4b0ca4409bf3c1afac1a84c1a",
-        "version" : "4.34.4"
+        "revision" : "c8f16d23aab87e0c86b03514ad0269817e945654",
+        "version" : "4.34.6"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git",
       "state" : {
-        "revision" : "36b898d9cde4bebb7c597e34dc37eb7c8062a796",
-        "version" : "4.34.4"
+        "revision" : "f7add3d0793000b229d6fe8d35d698b7986d2b7b",
+        "version" : "4.34.6"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git",
       "state" : {
-        "revision" : "9b7397cfa97b17dfdf3dc316b838636e74376b20",
-        "version" : "2.3.5"
+        "revision" : "a5587843c2a96ae29fd5f6fbf197e0253da422d1",
+        "version" : "2.3.7"
       }
     },
     {
