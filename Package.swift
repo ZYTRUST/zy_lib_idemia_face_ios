@@ -37,7 +37,7 @@ let package = Package(
             ],
             path: "Sources/zy_lib_idemia_face_ios_target",
             resources: [
-            .copy("zy_lib_idemia_face_ios.bundle") // Incluir el bundle como recurso
+            .process("Sources/zy_lib_idemia_face_ios.bundle") // Incluir el bundle como recurso
             ]
         )
     ]
