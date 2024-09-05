@@ -28,10 +28,10 @@ let package = Package(
                 .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore")
             ],
             path: "Sources/zy_lib_idemia_face_ios_target"
-            //,
-            //resources: [
-             //   .process("Resources")
-            //]
+            ,
+            resources: [
+                .copy("Resources") // Copia el bundle como recurso
+            ]
         ),
         .binaryTarget(
             name: "zy_lib_idemia_face_ios_bin",
