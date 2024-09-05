@@ -3,14 +3,13 @@ import PackageDescription
 
 let package = Package(
     name: "zy_lib_idemia_face_ios",
-    defaultLocalization: "es",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         .library(
             name: "zy_lib_idemia_face_ios",
-            targets: ["zy_lib_idemia_face_ios_target", "zy_lib_idemia_face_ios_bin"] // Define el producto usando el target binario
+            targets: ["zy_lib_idemia_face_ios_target"]
         )
     ],
     dependencies: [
@@ -20,16 +19,23 @@ let package = Package(
         .package(url: "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", from: "2.3.7")
     ],
     targets: [
-        .binaryTarget(
-            name: "zy_lib_idemia_face_ios_bin",
-            path: "Sources/zy_lib_idemia_face_ios.xcframework" // Ruta al archivo binario
-        ),
         .target(
             name: "zy_lib_idemia_face_ios_target",
-            path: "Sources/zy_lib_idemia_face_ios_target",
-            resources: [
-                .copy("Resources" ) // Procesar el bundle como recurso
-            ]
+            dependencies: [
+                .product(name: "zyBiometricSDK", package: "BiometricSDK"),
+                .product(name: "BiometricSDKAlgorithmPlugin_F6_0_IDD80", package: "BiometricSDKAlgorithmPlugin_F6_0_IDD80"),
+                .product(name: "BiometricSDKFaceCapturePluginNormal", package: "BiometricSDKFaceCapturePluginNormal"),
+                .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore")
+            ],
+            path: "Sources/zy_lib_idemia_face_ios_target"
+            //,
+            //resources: [
+             //   .process("Resources")
+            //]
+        ),
+        .binaryTarget(
+            name: "zy_lib_idemia_face_ios_bin",
+            path: "Sources/zy_lib_idemia_face_ios.xcframework"
         )
     ]
 )
