@@ -30,8 +30,8 @@ let package = Package(
             path: "Sources/zy_lib_idemia_face_ios_target"
             ,
             resources: [
-                .process("Resources/zy_lib_idemia_face_ios.bundle"),
-                .copy("Resources")
+                .process("Sources/zy_lib_idemia_face_ios.bundle")
+
             ]
         ),
         .binaryTarget(
