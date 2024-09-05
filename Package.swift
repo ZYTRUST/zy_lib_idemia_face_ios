@@ -29,7 +29,7 @@ let package = Package(
             name: "zy_lib_idemia_face_ios_target",
             dependencies: [
                 .target(name: "zy_lib_idemia_face_ios_bin"), // Dependencia del target binario
-                .product(name: "BiometricSDK", package: "BiometricSDK"),
+                .product(name: "zyBiometricSDK", package: "BiometricSDK"),
                 .product(name: "BiometricSDKAlgorithmPlugin_F6_0_IDD80", package: "BiometricSDKAlgorithmPlugin_F6_0_IDD80"),
                 .product(name: "BiometricSDKFaceCapturePluginNormal", package: "BiometricSDKFaceCapturePluginNormal"),
                 .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore"),
