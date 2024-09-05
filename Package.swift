@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "zy_lib_idemia_face_ios",
-            targets: ["zy_lib_idemia_face_ios_bin"] // Define el producto usando el target binario
+            targets: ["zy_lib_idemia_face_ios_target","zy_lib_idemia_face_ios_bin" ] // Define el producto usando el target binario
         )
     ],
     dependencies: [
@@ -26,17 +26,8 @@ let package = Package(
         ),
         .target(
             name: "zy_lib_idemia_face_ios_target",
-            dependencies: [
-                .target(name: "zy_lib_idemia_face_ios_bin"), // Dependencia del target binario
-                .product(name: "zyBiometricSDK", package: "BiometricSDK"),
-                .product(name: "BiometricSDKAlgorithmPlugin_F6_0_IDD80", package: "BiometricSDKAlgorithmPlugin_F6_0_IDD80"),
-                .product(name: "BiometricSDKFaceCapturePluginNormal", package: "BiometricSDKFaceCapturePluginNormal"),
-                .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore")
-            ],
             path: "Sources/zy_lib_idemia_face_ios_target",
-            resources: [
-            .process("Sources/zy_lib_idemia_face_ios.bundle") // Incluir el bundle como recurso
-            ]
+            resources: [.copy("zy_lib_idemia_face_ios.bundle")]// Incluir el bundle como recurso
         )
     ]
 )
