@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "zy_lib_idemia_face_ios",
-            targets: ["zy_lib_idemia_face_ios_target","zy_lib_idemia_face_ios_bin" ] // Define el producto usando el target binario
+            targets: ["zy_lib_idemia_face_ios_target", "zy_lib_idemia_face_ios_bin"] // Define el producto usando el target binario
         )
     ],
     dependencies: [
@@ -27,7 +27,9 @@ let package = Package(
         .target(
             name: "zy_lib_idemia_face_ios_target",
             path: "Sources/zy_lib_idemia_face_ios_target",
-            resources: [.copy("zy_lib_idemia_face_ios.bundle")]// Incluir el bundle como recurso
+            resources: [
+                .copy("Resources" ) // Procesar el bundle como recurso
+            ]
         )
     ]
 )
