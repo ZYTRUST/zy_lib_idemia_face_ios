@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "zy_lib_idemia_face_ios",
-            targets: ["zy_lib_idemia_face_ios_target"]
+            targets: ["zy_lib_idemia_face_ios_target" , "zy_lib_idemia_face_ios_bin"]
         )
     ],
     dependencies: [
