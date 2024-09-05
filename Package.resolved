@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ZYTRUST/BiometricSDK.git",
       "state" : {
-        "revision" : "7ddccea47e61a61ebee5695dc39160bd33130b48",
-        "version" : "4.34.14"
+        "revision" : "176371c416e1788cff6b3b0021072bc1a19b8569",
+        "version" : "4.34.16"
       }
     },
     {
@@ -34,15 +34,6 @@
       "state" : {
         "revision" : "a5587843c2a96ae29fd5f6fbf197e0253da422d1",
         "version" : "2.3.7"
-      }
-    },
-    {
-      "identity" : "lottie-ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/airbnb/lottie-ios.git",
-      "state" : {
-        "revision" : "fe4c6fe3a0aa66cdeb51d549623c82ca9704b9a5",
-        "version" : "4.5.0"
       }
     }
   ],

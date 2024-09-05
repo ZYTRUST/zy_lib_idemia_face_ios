@@ -14,11 +14,10 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", from: "4.34.14"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", from: "4.34.16"),
         .package(url: "https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F6_0_IDD80.git", from: "4.34.6"),
         .package(url: "https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git", from: "4.34.6"),
-        .package(url: "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", from: "2.3.7"),
-        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.4.1")
+        .package(url: "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", from: "2.3.7")
     ],
     targets: [
         .binaryTarget(
@@ -29,11 +28,10 @@ let package = Package(
             name: "zy_lib_idemia_face_ios_target",
             dependencies: [
                 .target(name: "zy_lib_idemia_face_ios_bin"), // Dependencia del target binario
-                .product(name: "BiometricSDK", package: "BiometricSDK"),
+                .product(name: "zyBiometricSDK", package: "BiometricSDK"),
                 .product(name: "BiometricSDKAlgorithmPlugin_F6_0_IDD80", package: "BiometricSDKAlgorithmPlugin_F6_0_IDD80"),
                 .product(name: "BiometricSDKFaceCapturePluginNormal", package: "BiometricSDKFaceCapturePluginNormal"),
-                .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore"),
-                .product(name: "Lottie", package: "lottie-ios")
+                .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore")
             ],
             path: "Sources/zy_lib_idemia_face_ios_target",
             resources: [
