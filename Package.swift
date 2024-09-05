@@ -14,7 +14,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", from: "4.34.13"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", from: "4.34.14"),
         .package(url: "https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F6_0_IDD80.git", from: "4.34.6"),
         .package(url: "https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git", from: "4.34.6"),
         .package(url: "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", from: "2.3.7"),

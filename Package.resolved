@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ZYTRUST/BiometricSDK.git",
       "state" : {
-        "revision" : "5ebbb8a4d29d8772900102dd9419c4eda55469c1",
-        "version" : "4.34.13"
+        "revision" : "7ddccea47e61a61ebee5695dc39160bd33130b48",
+        "version" : "4.34.14"
       }
     },
     {
