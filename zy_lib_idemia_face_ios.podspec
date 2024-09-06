@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.4.34'
+    s.version          = '6.4.35'
     s.summary          = 'libreria que pertenece a Zytrust SA zy-lib-idemia-face-ios.'
     
     # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/ZYTRUST/zy_lib_idemia_face_ios.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     
-    s.ios.deployment_target = '12.0'
+#    s.ios.deployment_target = '12.0'
     
 
     
