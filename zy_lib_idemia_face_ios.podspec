@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.4.37'
+    s.version          = '6.4.40'
     s.summary          = 'libreria que pertenece a Zytrust SA zy-lib-idemia-face-ios.'
     
     # This description is used to generate tags and improve search results.
@@ -29,11 +29,11 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '13.0'
     
-
     
     s.pod_target_xcconfig = {
         'ONLY_ACTIVE_ARCH' => 'YES'
     }
+    
     s.static_framework = true
 
     s.vendored_frameworks = "Sources/zy_lib_idemia_face_ios.xcframework"
