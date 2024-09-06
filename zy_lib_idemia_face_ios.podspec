@@ -8,9 +8,10 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.4.40'
+    s.version          = '6.4.41'
     s.summary          = 'libreria que pertenece a Zytrust SA zy-lib-idemia-face-ios.'
-    
+    s.swift_versions   = '5.0'
+
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
     #   * Try to keep it short, snappy and to the point.
