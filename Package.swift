@@ -13,10 +13,11 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", from: "4.34.16"),
-        .package(url: "https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F6_0_IDD80.git", from: "4.34.6"),
-        .package(url: "https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git", from: "4.34.6"),
-        .package(url: "https://github.com/ZYTRUST/BiometricSDKUIFaceModePassiveCore.git", from: "2.3.7")
+        .package(url: "https://github.com/ZYTRUST/BiometricSDK.git", exact: "4.45.3"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDKAlgorithmPlugin_F6_0_IDD80.git", exact: "4.45.2"),
+        .package(url: "https://github.com/ZYTRUST/BiometricSDKFaceCapturePluginNormal.git", exact: "4.45.2"),
+        .package(url: "https://github.com/realm/SwiftLint.git", exact: "0.55.0")
+    ],
     ],
     targets: [
         .target(
@@ -25,7 +26,7 @@ let package = Package(
                 .product(name: "zyBiometricSDK", package: "BiometricSDK"),
                 .product(name: "BiometricSDKAlgorithmPlugin_F6_0_IDD80", package: "BiometricSDKAlgorithmPlugin_F6_0_IDD80"),
                 .product(name: "BiometricSDKFaceCapturePluginNormal", package: "BiometricSDKFaceCapturePluginNormal"),
-                .product(name: "BiometricSDKUIFaceModePassiveCore", package: "BiometricSDKUIFaceModePassiveCore")
+                .product(name: "SwiftLint", package: "SwiftLint")
             ],
             path: "Sources/zy_lib_idemia_face_ios_target"
             ,

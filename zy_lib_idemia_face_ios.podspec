@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'zy_lib_idemia_face_ios'
-    s.version          = '6.4.45'
+    s.version          = '6.5.0'
     s.summary          = 'libreria que pertenece a Zytrust SA zy-lib-idemia-face-ios.'
     s.swift_versions   = '5.0'
 
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
     #   * Finally, don't worry about the indent, CocoaPods strips it!
     
     s.description      = <<-DESC
-    TODO: Add long description of the pod here.
+    libreria de verificacion facial usando el proveedor IDEMIA, esta libreria esta diseñada para correr en iOS 18
+    Elaborado por ZyTrust SA
     DESC
     
     s.homepage         = 'https://www.zytrust.com'
@@ -40,12 +41,13 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = "Sources/zy_lib_idemia_face_ios.xcframework"
     s.resources = ['Sources/zy_lib_idemia_face_ios.bundle']
 
+    s.dependency 'zyBiometricSDK', '4.45.3'
+    s.dependency 'BiometricSDKAlgorithmPlugin_F6_0_IDD80', '4.45.2'
+    s.dependency 'BiometricSDKFaceCapturePluginNormal', '4.45.2'
     
-    #s.dependency 'lottie-ios' , '~> 4.4.1'
-    s.dependency 'zyBiometricSDK', '~> 4.34.16'
-    s.dependency 'BiometricSDKAlgorithmPlugin_F6_0_IDD80', '~> 4.34.6'
-    s.dependency 'BiometricSDKFaceCapturePluginNormal', '~> 4.34.6'
-    s.dependency 'BiometricSDKUIFaceModePassiveCore', '~> 2.3.7'
+    #s.dependency 'lottie-ios' , '4.4.1'
+    
+    s.dependency 'SwiftLint' , '0.55.0'
 
     
 end
